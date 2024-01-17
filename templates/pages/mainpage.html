@@ -1,18 +1,48 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>메인 페이지</title>
-</head>
-<body>
-<nav>
-    <a href="/company/">company info</a>
-    <a href="/mysite/">product</a>
-</nav>
 {% extends 'base.html' %}
+{% load static %}
 {% block content %}
-<h1>메인 페이지입니다.</h1>
-{% endblock %}
+<!-- Page Content-->
+<div class="container px-2 px-lg-2">
+    <!-- Heading Row-->
+    <div class="row gx-4 gx-lg-5 align-items-center my-2">
+        <div class="col-lg-12"><img class="img-fluid rounded mb-4 mb-lg-0" src="{% static 'main.png' %}" alt="..." /></div>
 
-</body>
-</html>
+    </div>
+    <!-- Call to Action-->
+    <div class="card text-white bg-secondary my-5 py-4 text-center">
+        <p class="text-white m-0">
+            <a class="btn btn-success btn-sm rounded" href="#!">관리형이란?</a>
+        </p>
+    </div>
+    <!-- Content Row-->
+    <div class="row gx-4 gx-lg-5">
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">자유 관리석</h2>
+                    <p class="card-text">최소한의 관리와 자유를 보장하는 학습 관리 프로그램</p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">더 알아보기</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">집중 관리석</h2>
+                    <p class="card-text">자제력이 부족한 학생들을 위한 맞춤형 1:1 학습 관리 프로그램</p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">더 알아보기</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-5">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title">성인 전용석</h2>
+                    <p class="card-text">공무원/전문직을 준비하는 성인 고객을 위한 맞춤형 관리 프로그램</p>
+                </div>
+                <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">더 알아보기</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

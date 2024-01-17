@@ -10824,3 +10824,19 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0; /* 화면 높이 전체를 차지하도록 설정합니다. */
+}
+
+.login-container {
+  width: 300px; /* 로그인 폼의 너비를 조절해 필요에 맞게 설정하세요 */
+}
+
+form {
+  /* 필요에 따라 로그인 폼의 스타일을 추가할 수 있습니다. */
+}

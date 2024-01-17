@@ -10840,3 +10840,22 @@ body {
 form {
   /* 필요에 따라 로그인 폼의 스타일을 추가할 수 있습니다. */
 }
+
+#dropbox{
+  position:relative;
+  display: inline-block;
+}
+
+#dropdown-content{
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+#dropdown-content li{
+  display: block;
+}
+
+#dropbox:hover #dropdown-content{
+  display: block;
+}

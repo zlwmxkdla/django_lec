@@ -25,4 +25,5 @@ urlpatterns = [
 
     #path('', include('mysite.urls')),
     path('accounts/', include('accounts.urls')),
+    path('StudentManagement/', include('StudentManagement.urls')),
 ]

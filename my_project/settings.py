@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'pages',
 
     'accounts.apps.AccountsConfig',
+    'StudentManagement',
 ]
 
 MIDDLEWARE = [

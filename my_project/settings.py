@@ -38,11 +38,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     
-    'mysite',
+
     'pages',
 
     'accounts.apps.AccountsConfig',
     'StudentManagement',
+    'info_member'
 ]
 
 MIDDLEWARE = [

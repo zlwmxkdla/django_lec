@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info_member</title>
+</head>
+<body>
+<h1>학생 특이사항</h1>
+{% if content_list %}
+    {% for content in content_list %}
+        <hr/>
+        <h5><a href="/info_member/{{ content.id }}">{{ content.title }}</a> </h5>
+        <!--<h5>{{ content.content }}</h5>-->
+    {% endfor %}
+{% else %}
+    <p>content가 없습니다.</p>
+{% endif %}
+</body>
+</html>
+{% endblock %}

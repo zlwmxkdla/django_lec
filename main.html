@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MainPage</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <div id="box">
+        <h1 id="mainTitle">웹 개발 미니 퀴즈</h1>
+        <p id="problemTitle">문제 이름</p>
+        <div>
+          <div id="button1" onclick="handleButton(1)">문항 1</div>
+          <div id="button2" onclick="handleButton(2)">문항 2</div>
+          <div id="button3" onclick="handleButton(3)">문항 3</div>
+          <div id="button4" onclick="handleButton(4)">문항 4</div>
+        </div>
+        <div id="result">결과 란</div>
+        <div id="answer"></div>
+        <div>
+          <button id="next_problem">다음 문제로</button>
+          <button id="history_problem">이전 문제로</button>
+        </div>
+        <div id="submit_btn">제출하기</div>
+      </div>
+      <div id="nav">
+        <div id="problem_btn_number" onclick="handleProblemNumber(1)">1</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(2)">2</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(3)">3</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(4)">4</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(5)">5</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(6)">6</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(7)">7</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(8)">8</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(9)">9</div>
+        <div id="problem_btn_number" onclick="handleProblemNumber(10)">10</div>
+      </div>
+    </div>
+    <script src="problem.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'DungGeunMo';
+}
+
+body {
+  background-image: url(background-img.avif);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#startBtn {
+  padding: 20px 60px;
+  font-size: 20px;
+  font-weight: bold;
+  position: fixed;
+  bottom: 5%;
+  right: 35%;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: darkblue;
+  cursor: pointer;
+}
+
+#startBtn:hover {
+  padding: 25px 62px;
+}
+
+#mainTitle {
+  font-size: 14px;
+}
+
+#box {
+  background: rgb(256, 256, 256, 0.8);
+  width: 700px;
+  height: 300px;
+  border-radius: 15px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#nav {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  background: rgb(256, 256, 256, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#problem_btn_number {
+  font-size: 20px;
+  padding: 8px;
+  background: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#problem_btn_number:hover {
+  background: '#B9ED0';
+}
